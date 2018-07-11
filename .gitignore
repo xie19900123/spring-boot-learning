@@ -1,0 +1,9 @@
+﻿#过滤target文件下生成的编译文件
+target/
+.project
+.settings/
+.classpath
+*.MF
+.idea
+*.iml
+/bin/
