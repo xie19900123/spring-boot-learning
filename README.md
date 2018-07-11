@@ -1,4 +1,5 @@
-[SpringBoot | 第0章：前言](#SpringBoot | 第0章：前言)
+
+springboot系列教程
 
 *   [缘起](#缘起)
 *   [开发环境说明](#开发环境说明)
