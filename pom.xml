@@ -6,4 +6,7 @@
   <packaging>pom</packaging>
   <name>spring-boot</name>
   <description>springboot系列教程</description>
+  <modules>
+  	<module>chapter-1</module>
+  </modules>
 </project>
