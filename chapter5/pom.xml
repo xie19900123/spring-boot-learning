@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>cn.lqdev.learning</groupId>
+	<artifactId>springboot-chapter5</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>chapter5</name>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.14.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+	</dependencies>
+    <profiles>
+       <profile>
+          <id>dev</id>
+          <activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+			   <pom.port>8080</pom.port>
+			</properties>
+       </profile>
+       <profile>
+          <id>test</id>
+			<properties>
+			   <pom.port>8888</pom.port>
+			</properties>
+       </profile>       
+    </profiles>
+	<build>
+	<resources>
+		<resource>
+			<directory>src/main/resources</directory>
+			<includes>
+				<include>**/*</include>
+			</includes>
+		</resource>
+		<resource>
+			<directory>${project.basedir}/src/main/resources</directory>
+			<includes>
+				<include>**/*.properties</include>
+			</includes>
+			<!-- 加入此属性，才会进行过滤 -->
+			<filtering>true</filtering>
+		</resource>
+	</resources>
+	<plugins>
+		<plugin>
+			<artifactId>maven-resources-plugin</artifactId>
+			<configuration>
+				<encoding>utf-8</encoding>
+				<!-- 需要加入，因为maven默认的是${},而springbooot 默认会把此替换成@{} -->
+				<useDefaultDelimiters>true</useDefaultDelimiters>
+			</configuration>
+		</plugin>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
+	</plugins>
+	</build>
+</project>
