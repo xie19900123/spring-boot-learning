@@ -13,5 +13,6 @@
   	<module>chapter-3</module>
     <module>springboot-chapter5</module>
     <module>chapter5</module>
+    <module>chapter-7</module>
   </modules>
 </project>
