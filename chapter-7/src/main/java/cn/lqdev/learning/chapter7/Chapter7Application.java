@@ -7,8 +7,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import cn.lqdev.learning.chapter7.config.CustomFilter;
+import cn.lqdev.learning.chapter7.config.CustomHandlerInterceptor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -19,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
  *
  */
 @SpringBootApplication
-//@ServletComponentScan
+@ServletComponentScan
 @Slf4j
 public class Chapter7Application {
 	
