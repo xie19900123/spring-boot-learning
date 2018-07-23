@@ -84,13 +84,13 @@ public class MysqlGenerator {
 								// .setSuperEntityColumns(new String[]{"test_id"})
 								.setTableFillList(tableFillList)
 								// 自定义实体父类
-								// .setSuperEntityClass("cn.com.bosssoft.gep.basicdata.common.base.BsBaseEntity")
+								// .setSuperEntityClass("com.baomidou.demo.base.BsBaseEntity")
 								// // 自定义 mapper 父类
-								// .setSuperMapperClass("cn.com.bosssoft.gep.basicdata.common.base.BsBaseMapper")
+								// .setSuperMapperClass("com.baomidou.demo.base.BsBaseMapper")
 								// // 自定义 service 父类
-								// .setSuperServiceClass("cn.com.bosssoft.gep.basicdata.common.base.BsBaseService")
+								// .setSuperServiceClass("com.baomidou.demo.base.BsBaseService")
 								// // 自定义 service 实现类父类
-								// .setSuperServiceImplClass("cn.com.bosssoft.gep.basicdata.common.base.BsBaseServiceImpl")
+								// .setSuperServiceImplClass("com.baomidou.demo.base.BsBaseServiceImpl")
 								// 自定义 controller 父类
 								// .setSuperControllerClass("com.baomidou.demo.TestController")
 								// 【实体】是否生成字段常量（默认 false）
