@@ -11,11 +11,13 @@
   	<module>chapter-1</module>
 
   	<module>chapter-3</module>
-    <module>springboot-chapter5</module>
+    
     <module>chapter5</module>
     <module>chapter-7</module>
     <module>chapter-8</module>
     <module>chapter-9</module>
     <module>chapter-10</module>
+    <module>chapter-12</module>
+    <module>chapter-11</module>
   </modules>
 </project>
