@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>thymeleaf简单示例</title>
+</head>
+<body>
+<h1>Hello thymeleaf</h1>
+<!-- 这里注意：拼接时 变量要单独使用${param}，其他的常量使用''包裹 -->
+<h2 th:text="'名称：'+${name}+'，来自：'+${from}">默认值</h2>
+</body>
+</html>

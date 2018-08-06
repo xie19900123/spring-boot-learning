@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cn.lqdev.learning</groupId>
+	<artifactId>chapter-16</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>chapter-16</name>
+	<description>SpringBoot | 第十六章：web应用开发</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.15.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+	
+	<!-- 引入freemarker依赖 -->
+<!-- 	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-freemarker</artifactId>
+	</dependency> -->
+	    
+	    <!-- 引入Thymeleaf 依赖 -->
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+	</dependency>
+	
+	<!-- spring boot 内置tomcat jsp支持 -->
+	<dependency>
+		<groupId>org.apache.tomcat.embed</groupId>
+		<artifactId>tomcat-embed-jasper</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+	</dependency>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+	<!-- jsp时开启此配置 -->
+<!-- 	 <resources>
+	打包时将jsp文件拷贝到META-INF目录下
+	<resource>
+		指定resources插件处理哪个目录下的资源文件
+		<directory>src/main/webapp</directory>
+		注意此次必须要放在此目录下才能被访问到
+		<targetPath>META-INF/resources</targetPath>
+		<includes>
+			<include>**/**</include>
+		</includes>
+	</resource>
+	<resource>
+		<directory>src/main/resources</directory>
+		<includes>
+			<include>**/**</include>
+		</includes>
+		<filtering>false</filtering>
+	</resource>
+</resources> -->
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- jsp时替换成此版本 -->
+				<!-- <version>1.4.2.RELEASE</version> -->
+			</plugin>
+		</plugins>
+	</build>
+
+
+</project>
