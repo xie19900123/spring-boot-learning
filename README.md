@@ -27,7 +27,8 @@
 -  [第十三章：测试相关（单元测试、性能测试）](http://blog.lqdev.cn/2018/07/26/springboot/chapter-thirteen/)
 -  [第十四章：基于docker的简单部署](http://blog.lqdev.cn/2018/07/27/springboot/chapter-fourteen/)
 -  [第十五章：基于Postman的RESTful接口测试](http://blog.lqdev.cn/2018/07/28/springboot/chapter-fifteen/)
--  [SpringBoot | 第十六章：web应用开发](https://blog.lqdev.cn/2018/08/07/springboot/chapter-sixteen/)
+-  [第十六章：web应用开发](http://blog.lqdev.cn/2018/08/07/springboot/chapter-sixteen/)
+-  [第十七章：web应用开发之文件上传](http://blog.lqdev.cn/2018/08/07/springboot/chapter-seventeen/)
 -  待补充......
 
 ### 老生常谈
