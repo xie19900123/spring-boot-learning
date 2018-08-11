@@ -1,4 +1,4 @@
-package cn.com.bosssoft.springboot.chapter18.controller;
+package cn.lqdev.learning.springboot.chapter18.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

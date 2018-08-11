@@ -1,4 +1,4 @@
-package cn.com.bosssoft.springboot.chapter18;
+package cn.lqdev.learning.springboot.chapter18;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

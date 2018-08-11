@@ -1,4 +1,4 @@
-package cn.com.bosssoft.springboot.chapter18;
+package cn.lqdev.learning.springboot.chapter18;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

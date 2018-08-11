@@ -1,4 +1,4 @@
-package cn.com.bosssoft.springboot.chapter17;
+package cn.lqdev.learning.springboot.chapter17;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

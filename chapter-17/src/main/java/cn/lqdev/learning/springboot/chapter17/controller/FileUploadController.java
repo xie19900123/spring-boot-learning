@@ -1,4 +1,4 @@
-package cn.com.bosssoft.springboot.chapter17.controller;
+package cn.lqdev.learning.springboot.chapter17.controller;
 
 import java.io.File;
 import java.io.IOException;
