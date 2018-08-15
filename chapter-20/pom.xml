@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>chapter-20</name>
-	<description>满满童书馆小程序后台</description>
+	<description>SpringBoot | 第二十章：异步开发之异步请求</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
