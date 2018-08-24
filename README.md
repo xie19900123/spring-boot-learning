@@ -29,7 +29,19 @@
 -  [第十五章：基于Postman的RESTful接口测试](http://blog.lqdev.cn/2018/07/28/springboot/chapter-fifteen/)
 -  [第十六章：web应用开发](http://blog.lqdev.cn/2018/08/07/springboot/chapter-sixteen/)
 -  [第十七章：web应用开发之文件上传](http://blog.lqdev.cn/2018/08/07/springboot/chapter-seventeen/)
+-  [第十八章：web应用开发之WebJars使用](http://blog.lqdev.cn/2018/08/08/springboot/chapter-eighteen/ "第十八章：web应用开发之WebJars使用]")
+-  [第十九章：web应用开发之WebSocket](http://blog.lqdev.cn/2018/08/14/springboot/chapter-nineteen/ "第十九章：web应用开发之WebSocket")
+-  [第二十章：异步开发之异步请求](http://blog.lqdev.cn/2018/08/16/springboot/chapter-twenty/ "第二十章：异步开发之异步请求")
+-  [第二十一章：异步开发之异步调用](http://blog.lqdev.cn/2018/08/17/springboot/chapter-twenty-one/ "第二十一章：异步开发之异步调用")
+-  [第二十二章：定时任务](http://blog.lqdev.cn/2018/08/19/springboot/chapter-twenty-two/ "第二十二章：定时任务")
+-  [第二十三章：日志管理之整合篇](http://blog.lqdev.cn/2018/08/22/springboot/chapter-twenty-three/ "第二十三章：日志管理之整合篇")
+-  [第二十四章：日志管理之AOP统一日志](http://blog.lqdev.cn/2018/08/24/springboot/chapter-twenty-four/ "第二十四章：日志管理之AOP统一日志")
 -  待补充......
+
+番外：
+
+[SpringBoot | 番外：使用小技巧合集](http://blog.lqdev.cn/2018/08/11/springboot/springboot-tips/)
+[Mybatis-Plus使用全解](http://blog.lqdev.cn/2018/08/06/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/mybatis-plus-guide-one/)
 
 ### 老生常谈
 - 个人QQ：`499452441`
