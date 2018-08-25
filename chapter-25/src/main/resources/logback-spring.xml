@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+	<property name="LOG_HOME" value="/home" />
+	<!-- 控制台输出 -->
+	<appender name="MyLogback"
+		class="cn.lqdev.learning.springboot.chapter25.config.MyLogbackAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<!-- 日志收集最低日志级别 -->
+			<level>INFO</level>
+		</filter>
+		<layout
+			class="ch.qos.logback.classic.PatternLayout">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+		</layout>
+		<!-- 自定义参数 -->
+		<printString>一枚趔趄的猿(logback)</printString>
+	</appender>
+
+	<!-- 自定义包下设置为INFO,则可以看见输出的日志不包含debug输出了 -->
+	<logger name="cn.lqdev.learning" level="INFO" />
+
+	<!-- 日志输出级别 -->
+	<root level="INFO">
+		<appender-ref ref="MyLogback" />
+	</root>
+	
+<!-- <shutdownHook class="ch.qos.logback.core.hook.DelayingShutdownHook"/> -->
+</configuration>
