@@ -36,12 +36,14 @@
 -  [第二十二章：定时任务](http://blog.lqdev.cn/2018/08/19/springboot/chapter-twenty-two/ "第二十二章：定时任务")
 -  [第二十三章：日志管理之整合篇](http://blog.lqdev.cn/2018/08/22/springboot/chapter-twenty-three/ "第二十三章：日志管理之整合篇")
 -  [第二十四章：日志管理之AOP统一日志](http://blog.lqdev.cn/2018/08/24/springboot/chapter-twenty-four/ "第二十四章：日志管理之AOP统一日志")
+-  [第二十五章：日志管理之自定义Appender](http://blog.lqdev.cn/2018/08/25/springboot/chapter-twenty-five/ "第二十五章：日志管理之自定义Appender")
 -  待补充......
 
 番外：
 
 - [SpringBoot | 番外：使用小技巧合集](http://blog.lqdev.cn/2018/08/11/springboot/springboot-tips/)
 - [Mybatis-Plus使用全解](http://blog.lqdev.cn/2018/08/06/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/mybatis-plus-guide-one/)
+- [关于@webFilter使用@Order无效问题](http://blog.lqdev.cn/2018/08/26/%E6%97%A5%E5%B8%B8%E7%A7%AF%E7%B4%AF/correct-webfilter/)
 
 ### 老生常谈
 - 个人QQ：`499452441`
