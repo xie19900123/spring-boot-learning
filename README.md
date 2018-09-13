@@ -38,7 +38,7 @@
 -  [第二十四章：日志管理之AOP统一日志](http://blog.lqdev.cn/2018/08/24/springboot/chapter-twenty-four/ "第二十四章：日志管理之AOP统一日志")
 -  [第二十五章：日志管理之自定义Appender](http://blog.lqdev.cn/2018/08/25/springboot/chapter-twenty-five/ "第二十五章：日志管理之自定义Appender")
 -  [第二十六章：邮件发送](http://blog.lqdev.cn/2018/08/29/springboot/chapter-twenty-six/ "第二十六章：邮件发送") 
--  [第二十七章：监控管理之Actuator使用](http://blog.lqdev.cn/2018/08/29/springboot/chapter-twenty-seven/ "第二十七章：监控管理之Actuator使用") 
+-  [第二十七章：监控管理之Actuator使用](http://blog.lqdev.cn/2018/09/11/springboot/chapter-twenty-seven/ "第二十七章：监控管理之Actuator使用") 
 -  待补充......
 
 番外：
