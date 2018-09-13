@@ -5,9 +5,10 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.14.RELEASE</version>
+		<version>1.5.15.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
+  <groupId>cn.lqdev.learning.springboot</groupId>
   <artifactId>chapter-9</artifactId>
   <name>chapter-9</name>
   <url>http://maven.apache.org</url>
