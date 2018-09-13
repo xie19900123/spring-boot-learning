@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>chapter-16</name>
-	<description>SpringBoot | 第十六章：web应用开发</description>
+	<description>SpringBoot | 第十六章：web应用开发 </description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
