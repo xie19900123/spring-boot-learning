@@ -36,7 +36,9 @@
 		<module>chapter-28</module>
 		<module>springboot-webjars</module>
 		<module>chapter-29</module>
-    <module>chapter-30</module>
-    <module>chapter-31</module>
-  </modules>
+	    <module>chapter-30</module>
+	    <module>chapter-31</module>
+	    <module>chapter-32</module>
+	    <module>chapter-33</module>
+	</modules>
 </project>
