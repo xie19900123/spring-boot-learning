@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://www.lqdev.cn/webservice" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.lqdev.cn/webservice" targetNamespace="http://www.lqdev.cn/webservice">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.lqdev.cn/webservice">
+            <!-- 定义实体 -->
+            <xs:element name="authorRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="name" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="authorListRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nonce" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <!-- 定义实体 -->
+            <xs:element name="authorResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="author" type="tns:author"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="authorListResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="1" name="author" type="tns:author"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="author">
+                <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <!-- 爱好 列表形式 nillable=true 可为空 ，maxOccurs=unbouned 无限 -->
+                    <xs:element maxOccurs="unbounded" name="hobby" nillable="true" type="xs:string"/>
+                    <!-- 性别 枚举类型 限定 -->
+                    <xs:element name="sex" type="tns:sex"/>
+                    <!-- 生日 -->
+                    <xs:element name="birthday" type="xs:string"/>
+                    <!-- 描述 -->
+                    <xs:element name="description" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <!-- 枚举类型 性别：男 女 -->
+            <xs:simpleType name="sex">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="male"/>
+                    <xs:enumeration value="female"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="authorResponse">
+        <wsdl:part element="tns:authorResponse" name="authorResponse">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="authorListResponse">
+        <wsdl:part element="tns:authorListResponse" name="authorListResponse">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="authorListRequest">
+        <wsdl:part element="tns:authorListRequest" name="authorListRequest">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="authorRequest">
+        <wsdl:part element="tns:authorRequest" name="authorRequest">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="AuthorPort">
+        <wsdl:operation name="author">
+            <wsdl:input message="tns:authorRequest" name="authorRequest">
+    </wsdl:input>
+            <wsdl:output message="tns:authorResponse" name="authorResponse">
+    </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="authorList">
+            <wsdl:input message="tns:authorListRequest" name="authorListRequest">
+    </wsdl:input>
+            <wsdl:output message="tns:authorListResponse" name="authorListResponse">
+    </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="AuthorPortSoap11" type="tns:AuthorPort">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="author">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="authorRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="authorResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="authorList">
+            <soap:operation soapAction=""/>
+            <wsdl:input name="authorListRequest">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="authorListResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="AuthorPortService">
+        <wsdl:port binding="tns:AuthorPortSoap11" name="AuthorPortSoap11">
+            <soap:address location="http://127.0.0.1:8090/ws"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

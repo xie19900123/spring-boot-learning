@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+在重新编译源模式时, 对此文件的所有修改都将丢失。
+生成时间: 2018.11.09 时间 09:04:57 AM CST 
+
+  -->
+  <bindings xmlns:tns="http://www.lqdev.cn/webservice" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="cn.lqdev.webservice"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:authorRequest">
+      <class ref="cn.lqdev.webservice.AuthorRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:authorListRequest">
+      <class ref="cn.lqdev.webservice.AuthorListRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:authorResponse">
+      <class ref="cn.lqdev.webservice.AuthorResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:author">
+      <class ref="cn.lqdev.webservice.Author"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:authorListResponse">
+      <class ref="cn.lqdev.webservice.AuthorListResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:sex">
+      <typesafeEnumClass ref="cn.lqdev.webservice.Sex"/>
+    </bindings>
+  </bindings>
+</bindings>
