@@ -16,6 +16,6 @@
   <name>chapter-33</name>
   <modules>
     <module>spring-boot-webservice-server</module>
-    <module>spring-b--t-webservice-client</module>
+    <module>spring-boot-webservice-client</module>
 </modules>
 </project>
