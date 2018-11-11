@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.lqdev.cn/webservice" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="authorService" targetNamespace="http://www.lqdev.cn/webservice">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.lqdev.cn/webservice" elementFormDefault="unqualified" targetNamespace="http://www.lqdev.cn/webservice" version="1.0">
+            <xs:element name="getAuthorByName" type="tns:getAuthorByName"/>
+            <xs:element name="getAuthorByNameResponse" type="tns:getAuthorByNameResponse"/>
+            <xs:element name="getAuthorList" type="tns:getAuthorList"/>
+            <xs:element name="getAuthorListResponse" type="tns:getAuthorListResponse"/>
+            <xs:element name="getAuthorString" type="tns:getAuthorString"/>
+            <xs:element name="getAuthorStringResponse" type="tns:getAuthorStringResponse"/>
+            <xs:complexType name="getAuthorByName">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="authorName" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getAuthorByNameResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:authorDto"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="authorDto">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="birthday" type="xs:string"/>
+                    <xs:element minOccurs="0" name="description" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="hobby" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="name" type="xs:string"/>
+                    <xs:element minOccurs="0" name="sex" type="tns:sex"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getAuthorList">
+                <xs:sequence/>
+            </xs:complexType>
+            <xs:complexType name="getAuthorListResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:authorDto"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getAuthorString">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="authorName" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getAuthorStringResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:simpleType name="sex">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="MALE"/>
+                    <xs:enumeration value="FEMALE"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="getAuthorList">
+        <wsdl:part element="tns:getAuthorList" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAuthorByNameResponse">
+        <wsdl:part element="tns:getAuthorByNameResponse" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAuthorString">
+        <wsdl:part element="tns:getAuthorString" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAuthorByName">
+        <wsdl:part element="tns:getAuthorByName" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAuthorListResponse">
+        <wsdl:part element="tns:getAuthorListResponse" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAuthorStringResponse">
+        <wsdl:part element="tns:getAuthorStringResponse" name="parameters">
+    </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="authorPortType">
+        <wsdl:operation name="getAuthorByName">
+            <wsdl:input message="tns:getAuthorByName" name="getAuthorByName">
+    </wsdl:input>
+            <wsdl:output message="tns:getAuthorByNameResponse" name="getAuthorByNameResponse">
+    </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAuthorList">
+            <wsdl:input message="tns:getAuthorList" name="getAuthorList">
+    </wsdl:input>
+            <wsdl:output message="tns:getAuthorListResponse" name="getAuthorListResponse">
+    </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAuthorString">
+            <wsdl:input message="tns:getAuthorString" name="getAuthorString">
+    </wsdl:input>
+            <wsdl:output message="tns:getAuthorStringResponse" name="getAuthorStringResponse">
+    </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="authorServiceSoapBinding" type="tns:authorPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getAuthorByName">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getAuthorByName">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getAuthorByNameResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAuthorList">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getAuthorList">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getAuthorListResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getAuthorString">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getAuthorString">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getAuthorStringResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="authorService">
+        <wsdl:port binding="tns:authorServiceSoapBinding" name="authorPortName">
+            <soap:address location="http://127.0.0.1:8080/ws/author"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
