@@ -39,6 +39,13 @@
 -  [第二十五章：日志管理之自定义Appender](http://blog.lqdev.cn/2018/08/25/springboot/chapter-twenty-five/ "第二十五章：日志管理之自定义Appender")
 -  [第二十六章：邮件发送](http://blog.lqdev.cn/2018/08/29/springboot/chapter-twenty-six/ "第二十六章：邮件发送") 
 -  [第二十七章：监控管理之Actuator使用](http://blog.lqdev.cn/2018/09/11/springboot/chapter-twenty-seven/ "第二十七章：监控管理之Actuator使用") 
+-  [第二十八章：监控管理之Spring Boot Admin使用](http://blog.lqdev.cn/2018/09/14/springboot/chapter-twenty-eight/ "第二十八章：监控管理之Spring Boot Admin使用") 
+-  [第二十九章：Dubbo的集成和使用](http://blog.lqdev.cn/2018/09/28/springboot/chapter-twenty-nine/ "第二十九章：Dubbo的集成和使用") 
+-  [第三十章：Spring-data-jpa的集成和使用](http://blog.lqdev.cn/2018/10/31/springboot/chapter-thirty/ "第三十章：Spring-data-jpa的集成和使用") 
+-  [第三十一章：MongoDB的集成和使用](http://blog.lqdev.cn/2018/11/01/springboot/chapter-thirty-one/ "第三十一章：MongoDB的集成和使用") 
+-  [第三十二章：事件的发布和监听](http://blog.lqdev.cn/2018/11/06/springboot/chapter-thirty-two/ "第三十二章：事件的发布和监听") 
+-  [第三十三章：Spring web Servcies集成和使用](http://blog.lqdev.cn/2018/11/09/springboot/chapter-thirty-three/ "第三十三章：Spring web Servcies集成和使用") 
+-  [第三十四章：CXF构建WebService服务](http://blog.lqdev.cn/2018/11/12/springboot/chapter-thirty-four/ "第三十四章：CXF构建WebService服务") 
 -  待补充......
 
 番外：
