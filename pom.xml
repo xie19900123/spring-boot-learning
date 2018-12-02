@@ -41,5 +41,6 @@
 	    <module>chapter-32</module>
 	    <module>chapter-33</module>
 	    <module>chapter-34</module>
-	</modules>
+    <module>chapter-35</module>
+  </modules>
 </project>
