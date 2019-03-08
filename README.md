@@ -46,6 +46,8 @@
 -  [第三十二章：事件的发布和监听](http://blog.lqdev.cn/2018/11/06/springboot/chapter-thirty-two/ "第三十二章：事件的发布和监听") 
 -  [第三十三章：Spring web Servcies集成和使用](http://blog.lqdev.cn/2018/11/09/springboot/chapter-thirty-three/ "第三十三章：Spring web Servcies集成和使用") 
 -  [第三十四章：CXF构建WebService服务](http://blog.lqdev.cn/2018/11/12/springboot/chapter-thirty-four/ "第三十四章：CXF构建WebService服务") 
+-  [第三十五章：Mybatis的集成和使用](https://blog.lqdev.cn/2018/12/03/springboot/chapter-thirty-five/ "第三十五章：Mybatis的集成和使用") 
+-  [第三十六章：集成多CacheManager](https://blog.lqdev.cn/2019/03/08/springboot/chapter-thirty-six/ "第三十六章：集成多CacheManager") 
 -  待补充......
 
 番外：
