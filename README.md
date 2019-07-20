@@ -48,6 +48,7 @@
 -  [第三十四章：CXF构建WebService服务](http://blog.lqdev.cn/2018/11/12/springboot/chapter-thirty-four/ "第三十四章：CXF构建WebService服务") 
 -  [第三十五章：Mybatis的集成和使用](https://blog.lqdev.cn/2018/12/03/springboot/chapter-thirty-five/ "第三十五章：Mybatis的集成和使用") 
 -  [第三十六章：集成多CacheManager](https://blog.lqdev.cn/2019/03/08/springboot/chapter-thirty-six/ "第三十六章：集成多CacheManager") 
+-  [第三十七章：集成Jasypt实现配置项加密](https://blog.lqdev.cn/2019/05/08/springboot/chapter-thirty-seven/ "第三十七章：集成Jasypt实现配置项加密") 
 -  待补充......
 
 番外：
